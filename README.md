@@ -16,7 +16,7 @@ and return the answer and time in seconds it took to calculate.
 ## Dependencies
 
 - Java JDK
-- Rust/
+- Rust/Cargo
 - Go
 - PyPy
 - LuaJIT
@@ -27,7 +27,7 @@ and return the answer and time in seconds it took to calculate.
 
 ### Java
 
-`javac perf.class`
+`javac perf.java`
 
 ### C
 
