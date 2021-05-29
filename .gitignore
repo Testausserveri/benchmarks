@@ -3,3 +3,6 @@ perf.class
 perfcpp
 perfc
 perfrust
+perfcsharpsrc/bin
+perfcsharpsrc/obj
+
