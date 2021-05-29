@@ -5,4 +5,5 @@ perfc
 perfrust
 perfcsharpsrc/bin
 perfcsharpsrc/obj
-
+perfrustsrc/Cargo.lock
+perfrustsrc/target

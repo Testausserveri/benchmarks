@@ -22,7 +22,7 @@ and return the answer and time in seconds it took to calculate.
 - LuaJIT
 - GCC
 - Node.JS
-- .NET Sdk 5.0
+- .NET SDK 5.0
 
 ## Building
 
@@ -40,13 +40,17 @@ and return the answer and time in seconds it took to calculate.
 
 ### Rust
 
-`cd perfrustsrc`
-`cargo build --release`
+`cd perfrustsrc`  
+`cargo build --release`  
 `cp target/release/perfrust ../`
 
 ### C#
-`cd perfcsharpsrc`
-`dotnet build -c Release`
+
+No need to build, built at runtime.
+
+`cd perfcsharpsrc`  
+`dotnet build -c Release`  
+`cp bin/Release/net5.0/perf ../perfcsharp`
 
 ## Results
 
