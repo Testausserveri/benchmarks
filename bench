@@ -1,0 +1,30 @@
+#!/bin/bash
+echo "Very cool language benchmark script"
+echo "---"
+echo "Node"
+node perf.js
+echo "---"
+echo "Lua"
+luajit perf.lua
+echo "---"
+echo "Rust"
+./perfrust
+echo "---"
+echo "Go"
+go run perf.go
+echo "---"
+echo "Python"
+pypy perf.py
+echo "---"
+echo "C"
+./perfc
+echo "---"
+echo "C++"
+./perfcpp
+echo "---"
+echo "C#"
+echo "not implemented"
+echo "---"
+echo "Java"
+java perf
+echo "---"

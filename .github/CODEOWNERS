@@ -1,0 +1,12 @@
+bench @Chicken
+perf.js @Chicken
+perf.c @Chicken
+perf.cpp @Chicken
+perf.java @Chicken
+perf.py @Chicken
+perf.go @Chicken
+
+perf.lua @Hakaponttoauto
+
+perfrustsrc @DrVilepis
+

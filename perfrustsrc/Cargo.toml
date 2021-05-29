@@ -1,0 +1,14 @@
+[package]
+name = "perfrust"
+version = "0.1.0"
+authors = ["DrVilepis"]
+edition = "2018"
+
+[dependencies]
+time = "*"
+
+[profile.release]
+opt-level = 3
+
+[profile.dev]
+opt-level = 3
