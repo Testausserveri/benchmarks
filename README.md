@@ -22,6 +22,7 @@ and return the answer and time in seconds it took to calculate.
 - LuaJIT
 - GCC
 - Node.JS
+- .NET Sdk 5.0
 
 ## Building
 
@@ -42,6 +43,10 @@ and return the answer and time in seconds it took to calculate.
 `cd perfrustsrc`
 `cargo build --release`
 `cp target/release/perfrust ../`
+
+### C#
+`cd perfcsharpsrc`
+`dotnet build -c Release`
 
 ## Results
 

@@ -23,7 +23,7 @@ echo "C++"
 ./perfcpp
 echo "---"
 echo "C#"
-echo "not implemented"
+dotnet run --project perfcsharpsrc/perf.csproj --configuration Release --no-build
 echo "---"
 echo "Java"
 java perf
