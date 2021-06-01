@@ -1,10 +1,19 @@
-# Compiled binaries
+# Windows binaries
 *.exe
+
+# Java build files
 perf.class
-perfcpp
+
+# C build files
 perfc
-perfrust
+
+# C++ build files
+perfcpp
+
+# C# build files
 perfcsharpsrc/bin
 perfcsharpsrc/obj
+
+# Rust build files
 perfrustsrc/Cargo.lock
 perfrustsrc/target

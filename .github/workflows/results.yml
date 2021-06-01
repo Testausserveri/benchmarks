@@ -1,0 +1,44 @@
+name: Run benchmarks
+on:
+  workflow_dispatch:
+  push:
+    paths-ignore:
+      - 'README.md'
+      - '.gitignore'
+      - '.github/**'
+      - 'LICENSE'
+      - 'bench.bat'
+    branches:
+      - master
+
+jobs:
+  benchmark:
+    name: Benchmark
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Install LuaJIT
+        run: sudo apt-get install -y luajit
+
+      - name: Create new README
+        run: |
+          sed '/<!-- RESULTS -->/,$d' README.md > NEWREADME.md
+          echo -e '<!-- RESULTS -->\n```' >> NEWREADME.md
+
+      - name: Run benchmarks
+        run: ./bench >> NEWREADME.md
+
+      - name: Replace old README
+        run: |
+          echo -e '```\n' >> NEWREADME.md
+          mv NEWREADME.md README.md
+
+      - name: Commit new results
+        uses: EndBug/add-and-commit@v7
+        with:
+          add: README.md
+          message: 'chore: update results'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

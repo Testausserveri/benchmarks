@@ -34,4 +34,6 @@ Simply run the `bench` script (`bench.bat` on Windows) and wait for all the resu
 
 ## Results
 
-You can insert your results here.
+Benchmark results of GitHub actions runner.
+
+<!-- RESULTS -->
