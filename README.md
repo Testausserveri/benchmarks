@@ -26,7 +26,7 @@ and return the answer and time in seconds it took to calculate.
 
 Each program needs to be added to PATH if the associated installer or package doesn't do so automatically.
 
-\*You should select POSIX threads and SEH exceptions for your MinGW installation.
+\*You should select x86_64 architecture, POSIX threads, and SEH exceptions for your MinGW installation.
 
 ## Running
 
