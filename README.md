@@ -37,3 +37,44 @@ Simply run the `bench` script (`bench.bat` on Windows) and wait for all the resu
 Benchmark results of GitHub actions runner.
 
 <!-- RESULTS -->
+```
+Very cool language benchmark script
+---
+Node.js
+736957
+20.705s
+---
+Lua (LuaJIT)
+736957
+9.349652s
+---
+Rust
+736957
+13.184s
+---
+Go
+736957
+48.943132152s
+---
+Python (PyPy)
+736957
+76.1583981514s
+---
+C (GCC)
+736957
+13.755141s
+---
+C++ (G++)
+736957
+13.718877s
+---
+C#
+736957
+13.681312s
+---
+Java
+736957
+20.424s
+---
+```
+
