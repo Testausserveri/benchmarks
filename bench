@@ -1,30 +1,37 @@
 #!/bin/bash
 echo "Very cool language benchmark script"
 echo "---"
-echo "Node"
+echo "Node.js"
 node perf.js
 echo "---"
-echo "Lua"
+echo "Lua (LuaJIT)"
 luajit perf.lua
 echo "---"
 echo "Rust"
-./perfrust
+cd perfrustsrc
+cargo run -q --release
+cd ..
 echo "---"
 echo "Go"
 go run perf.go
 echo "---"
-echo "Python"
+echo "Python (PyPy)"
 pypy perf.py
 echo "---"
-echo "C"
+echo "C (GCC)"
+gcc perf.c -Ofast -o perfc
 ./perfc
 echo "---"
-echo "C++"
+echo "C++ (G++)"
+g++ perf.cpp -Ofast -o perfcpp
 ./perfcpp
 echo "---"
 echo "C#"
-dotnet run --project perfcsharpsrc/perf.csproj --configuration Release --no-build
+cd perfcsharpsrc
+dotnet run --configuration Release --verbosity quiet
+cd ..
 echo "---"
 echo "Java"
+javac perf.java
 java perf
 echo "---"
