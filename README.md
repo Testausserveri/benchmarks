@@ -20,11 +20,13 @@ and return the answer and time in seconds it took to calculate.
 - [Go](https://golang.org/doc/install)
 - [PyPy](https://www.pypy.org/download.html)
 - [LuaJIT](https://luajit.org/download.html)
-- GCC ([MinGW](https://sourceforge.net/projects/mingw-w64/) on Windows)
+- GCC ([MinGW](https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/installer/mingw-w64-install.exe/download) on Windows\*)
 - [Node.js](https://nodejs.org/en/download/)
 - [.NET 5.0 SDK](https://dotnet.microsoft.com/download/dotnet/5.0)
 
 Each program needs to be added to PATH if the associated installer or package doesn't do so automatically.
+
+\*You should select POSIX threads and SEH exceptions for your MinGW installation.
 
 ## Running
 
