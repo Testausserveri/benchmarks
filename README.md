@@ -15,42 +15,20 @@ and return the answer and time in seconds it took to calculate.
 
 ## Dependencies
 
-- Java JDK
-- Rust/Cargo
-- Go
-- PyPy
-- LuaJIT
-- GCC
-- Node.JS
-- .NET SDK 5.0
+- [Java JDK](https://adoptopenjdk.net/)
+- [Rust/Cargo](https://www.rust-lang.org/tools/install)
+- [Go](https://golang.org/doc/install)
+- [PyPy](https://www.pypy.org/download.html)
+- [LuaJIT](https://luajit.org/download.html)
+- GCC ([MinGW](https://sourceforge.net/projects/mingw-w64/) on Windows)
+- [Node.js](https://nodejs.org/en/download/)
+- [.NET 5.0 SDK](https://dotnet.microsoft.com/download/dotnet/5.0)
 
-## Building
+Each program needs to be added to PATH if the associated installer or package doesn't do so automatically.
 
-### Java
+## Running
 
-`javac perf.java`
-
-### C
-
-`gcc perf.c -O3 -o perfc`
-
-### CPP
-
-`g++ perf.cpp -O3 -o perfcpp`
-
-### Rust
-
-`cd perfrustsrc`  
-`cargo build --release`  
-`cp target/release/perfrust ../`
-
-### C#
-
-No need to build, built at runtime.
-
-`cd perfcsharpsrc`  
-`dotnet build -c Release`  
-`cp bin/Release/net5.0/perf ../perfcsharp`
+Simply run the `bench` script (`bench.bat` on Windows) and wait for all the results. You may notice some new files as languages like C, C++, C#, Java, and Rust need to be compiled and leave build artefacts. If there is an error, ensure that the program that errored is installed and on the PATH environment variable. If it is and it keeps erroring or crashing, then open an issue.
 
 ## Results
 
