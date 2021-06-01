@@ -1,4 +1,5 @@
 # Compiled binaries
+*.exe
 perf.class
 perfcpp
 perfc
