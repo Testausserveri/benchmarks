@@ -18,13 +18,19 @@ and return the answer and time in seconds it took to calculate.
 Benchmark results of GitHub actions runner.
 
 <!-- RESULTS START -->
-<img src="https://quickchart.io/chart?c=%7B%22type%22%3A%22bar%22%2C%22data%22%3A%7B%22labels%22%3A%5B%22C%23%22%2C%22Node.js%22%2C%22Python%20(PyPy)%22%5D%2C%22datasets%22%3A%5B%7B%22label%22%3A%22Time%22%2C%22data%22%3A%5B11.52007%2C18.742006467000014%2C63.5191600323%5D%7D%5D%7D%7D" />
+<img src="https://quickchart.io/chart?backgroundColor=white&c=%7B%22type%22%3A%22bar%22%2C%22data%22%3A%7B%22labels%22%3A%5B%22C%23%22%2C%22Node.js%22%2C%22Python%20(PyPy)%22%2C%22Lua%20(LuaJIT)%22%2C%22Rust%22%2C%22Go%22%2C%22C%20(GCC)%22%2C%22C%2B%2B%20(G%2B%2B)%22%2C%22Java%22%5D%2C%22datasets%22%3A%5B%7B%22label%22%3A%22Time%22%2C%22data%22%3A%5B11.512607%2C18.727338117999984%2C56.4145078659%2C6.938127%2C11.512%2C40.967403904%2C11.498816%2C10.160059%2C17.18%5D%7D%5D%7D%7D" />
 
 |Name|Time|
 |---|---|
-|C#|11.520070s|
-|Node.js|18.742006467000014s|
-|Python (PyPy)|63.5191600323s|
+|Lua (LuaJIT)|6.938127s|
+|C++ (G++)|10.160059s|
+|C (GCC)|11.498816s|
+|Rust|11.512s|
+|C#|11.512607s|
+|Java|17.18s|
+|Node.js|18.727338117999984s|
+|Go|40.967403904s|
+|Python (PyPy)|56.4145078659s|
 
 <!-- RESULTS END -->
 
