@@ -15,7 +15,7 @@ and return the answer and time in seconds it took to calculate.
 
 ## Results
 
-Benchmark results of GitHub actions runner.
+Benchmark results of GitHub Actions runner. Smaller is better.
 
 <!-- RESULTS START -->
 <img src="https://quickchart.io/chart?c=%7B%22type%22%3A%22bar%22%2C%22data%22%3A%7B%22labels%22%3A%5B%22C%23%22%2C%22Node.js%22%2C%22Python%20(PyPy)%22%5D%2C%22datasets%22%3A%5B%7B%22label%22%3A%22Time%22%2C%22data%22%3A%5B11.52007%2C18.742006467000014%2C63.5191600323%5D%7D%5D%7D%7D" />
