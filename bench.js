@@ -30,15 +30,18 @@ const benchmarks = [
     },
     {
         name: "C (GCC)",
-        perf: "gcc perf.c -Ofast -o perfc && ./perfc"
+        build: "gcc perf.c -Ofast -o perfc",
+        perf: "./perfc"
     },
     {
         name: "C++ (G++)",
-        perf: "g++ perf.cpp -Ofast -o perfcpp && ./perfcpp"
+        build: "g++ perf.cpp -Ofast -o perfcpp",
+        perf: "./perfcpp"
     },
     {
         name: "Java",
-        perf: "javac perf.java && java perf"
+        build: "javac perf.java",
+        perf: "java perf"
     }
 ];
 
@@ -67,7 +70,7 @@ const generateChartUrl = (benchmarks) => {
             }]
         }
     };
-    return `https://quickchart.io/chart?c=${encodeURIComponent(JSON.stringify(data))}`;
+    return `https://quickchart.io/chart?backgroundColor=white&c=${encodeURIComponent(JSON.stringify(data))}`;
 };
 
 const generateMarkdownTable = (benchmarks) => {
@@ -79,7 +82,8 @@ const generateMarkdownTable = (benchmarks) => {
 
 (async () => {
     for await (const benchmark of benchmarks) {
-        const results = await run(benchmark.perf, benchmark.cwd)
+        if (benchmark.build) await run(benchmark.build);
+        const results = await run(benchmark.perf, benchmark.cwd);
         const [size, time] = results.split("\n").map(i => i.trim());
         benchmark.size = size;
         benchmark.time = time;
