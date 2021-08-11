@@ -18,13 +18,13 @@ and return the answer and time in seconds it took to calculate.
 Benchmark results of GitHub actions runner.
 
 <!-- RESULTS START -->
-<img src="https://quickchart.io/chart?c=%7B%22type%22%3A%22bar%22%2C%22data%22%3A%7B%22labels%22%3A%5B%22C%23%22%2C%22Node.js%22%2C%22Python%20(Py)%22%5D%2C%22datasets%22%3A%5B%7B%22label%22%3A%22Time%22%2C%22data%22%3A%5B0.000723%2C0.00423360002040863%2C0.01901388168334961%5D%7D%5D%7D%7D" />
+<img src="https://quickchart.io/chart?c=%7B%22type%22%3A%22bar%22%2C%22data%22%3A%7B%22labels%22%3A%5B%22C%23%22%2C%22Node.js%22%2C%22Python%20(PyPy)%22%5D%2C%22datasets%22%3A%5B%7B%22label%22%3A%22Time%22%2C%22data%22%3A%5B11.52007%2C18.742006467000014%2C63.5191600323%5D%7D%5D%7D%7D" />
 
 |Name|Time|
 |---|---|
-|C#|0.000723s|
-|Node.js|0.00423360002040863s|
-|Python (Py)|0.01901388168334961s|
+|C#|11.520070s|
+|Node.js|18.742006467000014s|
+|Python (PyPy)|63.5191600323s|
 
 <!-- RESULTS END -->
 
