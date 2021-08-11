@@ -27,18 +27,8 @@ jobs:
         with:
           python-version: pypy2
 
-      - name: Create new README
-        run: |
-          sed '/<!-- RESULTS -->/,$d' README.md > NEWREADME.md
-          echo -e '<!-- RESULTS -->\n```' >> NEWREADME.md
-
       - name: Run benchmarks
-        run: ./bench >> NEWREADME.md
-
-      - name: Replace old README
-        run: |
-          echo -e '```\n' >> NEWREADME.md
-          mv NEWREADME.md README.md
+        run: node bench.js
 
       - name: Commit new results
         uses: EndBug/add-and-commit@v7

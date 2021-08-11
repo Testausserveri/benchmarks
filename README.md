@@ -13,6 +13,21 @@ for (a = 1; a <= 65535; a++) {
 
 and return the answer and time in seconds it took to calculate.
 
+## Results
+
+Benchmark results of GitHub actions runner.
+
+<!-- RESULTS START -->
+<img src="https://quickchart.io/chart?c=%7B%22type%22%3A%22bar%22%2C%22data%22%3A%7B%22labels%22%3A%5B%22C%23%22%2C%22Node.js%22%2C%22Python%20(Py)%22%5D%2C%22datasets%22%3A%5B%7B%22label%22%3A%22Time%22%2C%22data%22%3A%5B0.000723%2C0.00423360002040863%2C0.01901388168334961%5D%7D%5D%7D%7D" />
+
+|Name|Time|
+|---|---|
+|C#|0.000723s|
+|Node.js|0.00423360002040863s|
+|Python (Py)|0.01901388168334961s|
+
+<!-- RESULTS END -->
+
 ## Dependencies
 
 - [Java JDK](https://adoptopenjdk.net/)
@@ -31,50 +46,3 @@ Each program needs to be added to PATH if the associated installer or package do
 ## Running
 
 Simply run the `bench` script (`bench.bat` on Windows) and wait for all the results. You may notice some new files as languages like C, C++, C#, Java, and Rust need to be compiled and leave build artefacts. If there is an error, ensure that the program that errored is installed and on the PATH environment variable. If it is and it keeps erroring or crashing, then open an issue.
-
-## Results
-
-Benchmark results of GitHub actions runner.
-
-<!-- RESULTS -->
-```
-Very cool language benchmark script
----
-Node.js
-736957
-18.527391325999996s
----
-Lua (LuaJIT)
-736957
-7.069992s
----
-Rust
-736957
-14.516s
----
-Go
-736957
-38.218117858s
----
-Python (PyPy)
-736957
-61.3658149242s
----
-C (GCC)
-736957
-12.372645s
----
-C++ (G++)
-736957
-15.182596s
----
-C#
-736957
-15.134069s
----
-Java
-736957
-22.17s
----
-```
-
