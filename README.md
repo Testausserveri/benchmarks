@@ -18,19 +18,19 @@ and return the answer and time in seconds it took to calculate.
 Benchmark results of GitHub Actions runner. Smaller is better.
 
 <!-- RESULTS START -->
-<img src="https://quickchart.io/chart?backgroundColor=white&c=%7B%22type%22%3A%22bar%22%2C%22data%22%3A%7B%22labels%22%3A%5B%22C%23%22%2C%22Node.js%22%2C%22Python%20(PyPy)%22%2C%22Lua%20(LuaJIT)%22%2C%22Rust%22%2C%22Go%22%2C%22C%20(GCC)%22%2C%22C%2B%2B%20(G%2B%2B)%22%2C%22Java%22%5D%2C%22datasets%22%3A%5B%7B%22label%22%3A%22Time%22%2C%22data%22%3A%5B11.512607%2C18.727338117999984%2C56.4145078659%2C6.938127%2C11.512%2C40.967403904%2C11.498816%2C10.160059%2C17.18%5D%7D%5D%7D%7D" />
+<img src="https://quickchart.io/chart?backgroundColor=white&c=%7B%22type%22%3A%22bar%22%2C%22data%22%3A%7B%22labels%22%3A%5B%22Lua%20(LuaJIT)%22%2C%22C%20(GCC)%22%2C%22Rust%22%2C%22C%23%22%2C%22C%2B%2B%20(G%2B%2B)%22%2C%22Java%22%2C%22Node.js%22%2C%22Go%22%2C%22Python%20(PyPy)%22%5D%2C%22datasets%22%3A%5B%7B%22label%22%3A%22Time%22%2C%22data%22%3A%5B9.427376%2C13.796384%2C13.809%2C13.817747%2C13.838977%2C20.563%2C22.459493671000004%2C49.218947721%2C76.6994969845%5D%7D%5D%7D%7D" />
 
-|Name|Time|
-|---|---|
-|Lua (LuaJIT)|6.938127s|
-|C++ (G++)|10.160059s|
-|C (GCC)|11.498816s|
-|Rust|11.512s|
-|C#|11.512607s|
-|Java|17.18s|
-|Node.js|18.727338117999984s|
-|Go|40.967403904s|
-|Python (PyPy)|56.4145078659s|
+|Name|Time|Iterations|
+|---|---|---|
+|Lua (LuaJIT)|9.427376s|736957|
+|C (GCC)|13.796384s|736957|
+|Rust|13.809s|736957|
+|C#|13.817747s|736957|
+|C++ (G++)|13.838977s|736957|
+|Java|20.563s|736957|
+|Node.js|22.459493671000004s|736957|
+|Go|49.218947721s|736957|
+|Python (PyPy)|76.6994969845s|736957|
 
 <!-- RESULTS END -->
 
