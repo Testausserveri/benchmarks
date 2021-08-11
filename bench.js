@@ -13,7 +13,7 @@ const benchmarks = [
     },
     {
         name: "Python (PyPy)",
-        perf: "pypy3 perf.py"
+        perf: "pypy perf.py"
     }
 ];
 
@@ -24,6 +24,7 @@ const run = (perf, cwd = ".") => new Promise((resolve, reject) => {
     let data = "";
     perfProcess.stdout.on("data", (output) => data += output.toString());
     perfProcess.on("close", () => {
+        console.log(`${perf}\n${data.split('\n').map(d => `    ${d}`).join('\n')}`);
         resolve(data)
     });
 });
