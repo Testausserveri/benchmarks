@@ -75,7 +75,6 @@ const generateChartUrl = (benchmarks) => {
 
 const generateMarkdownTable = (benchmarks) => {
     const header = `|Name|Time|Iterations|\n|---|---|---|\n`;
-    benchmarks.sort((a, b) => (timeToFloat(a.time) - timeToFloat(b.time)))
     const content = benchmarks.map(benchmark => `|${benchmark.name}|${benchmark.time}|${benchmark.size}|\n`).join("");
     return header + content;
 };
@@ -88,6 +87,7 @@ const generateMarkdownTable = (benchmarks) => {
         benchmark.size = size;
         benchmark.time = time;
     }
+    benchmarks.sort((a, b) => (timeToFloat(a.time) - timeToFloat(b.time)));
 
     console.log(benchmarks);
 
