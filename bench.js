@@ -14,6 +14,31 @@ const benchmarks = [
     {
         name: "Python (PyPy)",
         perf: "pypy perf.py"
+    },
+    {
+        name: "Lua (LuaJIT)",
+        perf: "luajit perf.lua"
+    },
+    {
+        name: "Rust",
+        perf: "cargo run -q --release",
+        cwd: "./perfrustsrc/"
+    },
+    {
+        name: "Go",
+        perf: "go run perf.go"
+    },
+    {
+        name: "C (GCC)",
+        perf: "gcc perf.c -Ofast -o perfc && ./perfc"
+    },
+    {
+        name: "C++ (G++)",
+        perf: "g++ perf.cpp -Ofast -o perfcpp && ./perfcpp"
+    },
+    {
+        name: "Java",
+        perf: "javac perf.java && java perf"
     }
 ];
 
