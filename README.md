@@ -13,6 +13,27 @@ for (a = 1; a <= 65535; a++) {
 
 and return the answer and time in seconds it took to calculate.
 
+## Results
+
+Benchmark results of GitHub Actions runner. Smaller is better.
+
+<!-- RESULTS START -->
+<img src="https://quickchart.io/chart?backgroundColor=white&c=%7B%22type%22%3A%22bar%22%2C%22data%22%3A%7B%22labels%22%3A%5B%22Lua%20(LuaJIT)%22%2C%22C%20(GCC)%22%2C%22Rust%22%2C%22C%2B%2B%20(G%2B%2B)%22%2C%22C%23%22%2C%22Java%22%2C%22Node.js%22%2C%22Go%22%2C%22Python%20(PyPy)%22%5D%2C%22datasets%22%3A%5B%7B%22label%22%3A%22Time%22%2C%22data%22%3A%5B9.446317%2C13.800214%2C13.808%2C13.820863%2C13.852567%2C20.608%2C22.45517606%2C49.192992355%2C76.6553580761%5D%7D%5D%7D%7D" />
+
+|#|Name|Time|Answer|
+|---|---|---|---|
+|1|Lua (LuaJIT)|9.446317s|736957|
+|2|C (GCC)|13.800214s|736957|
+|3|Rust|13.808s|736957|
+|4|C++ (G++)|13.820863s|736957|
+|5|C#|13.852567s|736957|
+|6|Java|20.608s|736957|
+|7|Node.js|22.45517606s|736957|
+|8|Go|49.192992355s|736957|
+|9|Python (PyPy)|76.6553580761s|736957|
+
+<!-- RESULTS END -->
+
 ## Dependencies
 
 - [Java JDK](https://adoptopenjdk.net/)
@@ -31,50 +52,3 @@ Each program needs to be added to PATH if the associated installer or package do
 ## Running
 
 Simply run the `bench` script (`bench.bat` on Windows) and wait for all the results. You may notice some new files as languages like C, C++, C#, Java, and Rust need to be compiled and leave build artefacts. If there is an error, ensure that the program that errored is installed and on the PATH environment variable. If it is and it keeps erroring or crashing, then open an issue.
-
-## Results
-
-Benchmark results of GitHub actions runner.
-
-<!-- RESULTS -->
-```
-Very cool language benchmark script
----
-Node.js
-736957
-18.527391325999996s
----
-Lua (LuaJIT)
-736957
-7.069992s
----
-Rust
-736957
-14.516s
----
-Go
-736957
-38.218117858s
----
-Python (PyPy)
-736957
-61.3658149242s
----
-C (GCC)
-736957
-12.372645s
----
-C++ (G++)
-736957
-15.182596s
----
-C#
-736957
-15.134069s
----
-Java
-736957
-22.17s
----
-```
-
