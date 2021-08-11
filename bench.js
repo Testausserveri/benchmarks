@@ -74,8 +74,8 @@ const generateChartUrl = (benchmarks) => {
 };
 
 const generateMarkdownTable = (benchmarks) => {
-    const header = `|Name|Time|Iterations|\n|---|---|---|\n`;
-    const content = benchmarks.map(benchmark => `|${benchmark.name}|${benchmark.time}|${benchmark.size}|\n`).join("");
+    const header = `|#|Name|Time|Iterations|\n|---|---|---|---|\n`;
+    const content = benchmarks.map((benchmark, index) => `|${index + 1}|${benchmark.name}|${benchmark.time}|${benchmark.size}|\n`).join("");
     return header + content;
 };
 
