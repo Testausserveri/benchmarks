@@ -12,8 +12,8 @@ const benchmarks = [
         perf: "node perf.js"
     },
     {
-        name: "Python (Py)",
-        perf: "py perf.py"
+        name: "Python (PyPy)",
+        perf: "pypy3 perf.py"
     }
 ];
 
