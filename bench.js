@@ -30,12 +30,12 @@ const benchmarks = [
     },
     {
         name: "C (GCC)",
-        build: "gcc perf.c --march=native --mtune=native -Ofast -o perfc",
+        build: "gcc perf.c -march=native -mtune=native -Ofast -o perfc",
         perf: "./perfc"
     },
     {
         name: "C++ (G++)",
-        build: "g++ perf.cpp --march=native --mtune=native -Ofast -o perfcpp",
+        build: "g++ perf.cpp -march=native -mtune=native -Ofast -o perfcpp",
         perf: "./perfcpp"
     },
     {

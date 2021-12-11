@@ -19,11 +19,11 @@ echo "Python (PyPy)"
 pypy perf.py
 echo "---"
 echo "C (GCC)"
-gcc perf.c -Ofast --march=native --mtune=native -o perfc
+gcc perf.c -Ofast -march=native -mtune=native -o perfc
 ./perfc
 echo "---"
 echo "C++ (G++)"
-g++ perf.cpp --march=native --mtune=native -Ofast -o perfcpp
+g++ perf.cpp -march=native -mtune=native -Ofast -o perfcpp
 ./perfcpp
 echo "---"
 echo "C#"
